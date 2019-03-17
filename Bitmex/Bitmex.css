@@ -1,0 +1,216 @@
+:root {
+    --pink                  : rgb(235, 147, 179);
+    --red                   : #e84f69;
+    --redDark               : #bb2c50;
+
+    --brown                 : rgb(116, 180, 226);
+    --orange                : #5881aa;
+    --yellow                : #83c5f5;
+
+    --lime                  : rgb(108, 228, 206);
+    --green                 : #51c39b;
+    --greenDark             : #239e73;
+
+    --teal                  : #b283d1;
+    --blue                  : #9559c4;
+    --purple                : rgb(150, 54, 153);
+
+    --lightGray             : rgb(156, 156, 156);
+    --gray                  : #333;
+    --gray-dark             : #888;
+    --gray-darker           : #bbb;
+    --gray-light            : #999;
+    --backgroundGray        : #333;
+
+    --shadowGray            : rgba(#676767, .6);
+    --black                 : #fff;
+}
+
+:root .light {
+    --pink                  : rgb(235, 147, 179);
+    --red                   : #e84f69;
+    --redDark               : #bb2c50;
+
+    --brown                 : rgb(70, 125, 165);
+    --orange                : #5881aa;
+    --yellow                : #83c5f5;
+
+    --lime                  : rgb(108, 228, 206);
+    --green                 : #51c39b;
+    --greenDark             : #239e73;
+
+    --teal                  : #b283d1;
+    --blue                  : #9559c4;
+    --purple                : rgb(150, 54, 153);
+
+    --gray                  : #333;
+    --gray-dark             : #888;
+    --gray-darker           : #bbb;
+    --gray-light            : #999;
+    --backgroundGray        : #333;
+    --lightGray             : #E6E9ED;
+    --shadowGray            : rgba(#676767, .6);
+    --white                 : #000;
+    --black                 : #fff;
+}
+
+
+body {
+    background-image        : none;
+    background-color        : var(--lightGray);
+}
+.light{
+    --headerBackground      : var(--gray);
+    --sidebarBackground     : var(--gray-darker);
+    --sidebarBackground2    : var(--gray-dark);
+}
+.btn-success {
+    color                   : var(--black);
+    background-color        : var(--green);
+    border-color            : var(--greenDark);
+}
+.btn-danger {
+    color                   : var(--black);
+    background-color        : var(--red);
+    border-color            : var(--redDark);
+}
+
+.indicatorGraph {
+    background-image        : -webkit-gradient(linear, left top, right top, from(var(--green)), to(var(--red)));
+    background-image        : linear-gradient(to right, var(--green), var(--red));
+}
+
+.tickerBar .tickerBarInner {
+    height                  : 1.6923076923rem;
+    padding                 : 0;
+    background              : var(--gray);
+    border-bottom           : 1px solid var(--lightgray);
+    height                  : 100%;
+    color                   : var(--gray-darker);
+
+}
+.tickerBar .symbol {
+    color                   : var(--black);
+}
+.tickerBar .lastChangePcnt.neg {
+    color                   : var(--red);
+}
+.tickerBar .lastChangePcnt.pos {
+    color                   : var(--green);
+}
+.executionTable tr.short td:first-child, .positionsList tr.short td:first-child {
+    border-left: 6px solid var(--red);
+}
+.executionTable tr.long td:first-child, .positionsList tr.long td:first-child {
+    border-left: 6px solid var(--green);
+}
+.executionTable tr.short td:last-child, .positionsList tr.short td:last-child {
+    border-right: 6px solid var(--red);
+}
+.executionTable tr.long td:last-child, .positionsList tr.long td:last-child {
+    border-right: 6px solid var(--green);
+}
+
+.positionsList tbody tr.selected td:first-child, .instrumentsListWrapper tbody tr.selected td:first-child {
+    color: var(--brown);
+}
+.selected .symbol {
+    color: var(--brown);
+    font-weight: 600;
+}
+.executionTable .selected .symbol {
+    color: var(--brown);
+    font-weight: 600;
+}
+
+.marginDisplay .barPositive .dataBar {
+    background-color: var(--green);
+}
+.marginDisplay .barNegative .dataBar {
+    background-color: var(--red);
+}
+.marginDisplay .barNeutral .dataBar {
+    background-color: var(--red);
+}
+.neg {
+    color: var(--red);
+}
+.pos {
+    color: var(--green);
+}
+.positionsList .liquidationPrice {
+    font-weight: 600;
+    color: var(--redDark);
+}
+
+.priceWidget.ZeroPlusTick {
+    color: var(--green);
+}
+.priceWidget.ZeroMinusTick {
+    color: var(--red);
+}
+.priceWidget.MinusTick {
+    color: var(--red);
+}
+.priceWidget.PlusTick {
+    color: var(--green);
+}
+
+.orderBook.dualColumn .asks .depthBar {
+    background-color: var(--red);
+}
+.orderBook.dualColumn .bids .depthBar {
+    background-color: var(--green);
+}
+.orderBook.dualColumn .asks .depthBar {
+    background-color: var(--red);
+}
+
+.table-container-inner .neg {
+    color: var(--red);
+}
+.table-container-inner .pos {
+    color: var(--green);
+}
+
+.table-container-inner .neg {
+    font-weight: 600;
+    color: var(--brown);
+}
+.positionDeleverageIndicator .leverageLight.statusGreen {
+    background: var(--green);
+}
+.positionDeleverageIndicator .leverageLight.statusRed {
+    background: var(--red);
+}
+.orderBook.dualColumn .asks th {
+    color: var(--red);
+}
+.recentTradeList .Sell {
+    color: var(--red);
+}
+.recentTradeList .Buy {
+    color: var(--green);
+}
+
+.tradeSidebar .priceNeg {
+    color: var(--red);
+}
+
+.lowMarkLiqDif, .priceNeg {
+    color: var(--redDark);
+}
+
+.tradeSidebar .pricePos {
+    color: var(--green);
+}
+
+.lowMarkLiqDif, .pricePos {
+    color: var(--greenDark);
+}
+
+.orderBook .myOrder {
+    color: var(--brown);
+    font-weight: 700;
+    border-bottom: 0;
+}
