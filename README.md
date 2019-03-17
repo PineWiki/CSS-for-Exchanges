@@ -3,4 +3,12 @@
 #### For now , there's only a CSS for Bitmex that can be re-colored using root:{variables} 
 #### Look around, and if you like it, want to modify, or create something you want to share, join this Git.
 
+
+# Exchanges TODO:
+[X] BitMEX
+[] Kraken
+[] OkCoin
+[] Poloniex
+[] Binance
+[] Bitfinex
 ![Pinewiki](https://github.com/PineWiki/CSS-for-Exchanges/blob/master/Bitmex/Bitmex%20-%20Pinewiki.jpg)
