@@ -1,5 +1,7 @@
 # CSS Styles for Exchanges
 With a plugin like ADDCSS , Styler , UserCSS , You can modify the look of Sites using CSS (Cascading Style Sheets).
+These plugins allows you to enter CSS per site, that overwrites their original properties.
+
 For now , there's only one CSS for Bitmex that can be re-colored using root:{variables} 
 Look around, and if you like it, want to modify, or create something you want to share, join this Git, or PM.
 
