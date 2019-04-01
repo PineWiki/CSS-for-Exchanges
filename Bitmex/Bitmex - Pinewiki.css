@@ -214,3 +214,12 @@ body {
     font-weight: 700;
     border-bottom: 0;
 }
+.popUpWidget.wide{
+    background-color        : var(--shadowGray);
+    width                   : 40rem;
+    
+    }
+.dark .popUpChat .chatWidget, .dark-v2 .popUpChat .chatWidget {
+    background: #70787900; 
+}
+
